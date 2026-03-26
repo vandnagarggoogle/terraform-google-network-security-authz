@@ -6,12 +6,12 @@
  */
 
 variable "project_id" {
-  type = string
+  type        = string
   description = "The ID of the project in which the resource belongs."
 }
 
 variable "location" {
-  type = string
+  type        = string
   description = "The GCP region to deploy the resources."
 }
 

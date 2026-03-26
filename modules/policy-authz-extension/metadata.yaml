@@ -28,7 +28,7 @@ spec:
     version: 0.0.1
     actuationTool:
       flavor: Terraform
-      version: ">= 0.13"
+      version: ">= 1.3, < 1.6"
     description: {}
     icon: assets/icon.png
     costEstimate:
@@ -54,9 +54,11 @@ spec:
   interfaces:
     variables:
       - name: project_id
+        description: The ID of the project in which the resource belongs.
         varType: string
         required: true
       - name: location
+        description: The GCP region to deploy the resources.
         varType: string
         required: true
       - name: extensions_config

@@ -17,7 +17,7 @@ module "authz_policy" {
   name       = "my-custom-authz-policy"
   location   = "global"
   action     = "ALLOW"
-  
+
   target = {
     load_balancing_scheme = "INTERNAL_MANAGED"
     resources             = ["projects/your-gcp-project-id/locations/global/targetHttpProxies/my-proxy"]
@@ -28,7 +28,6 @@ module "authz_policy" {
   }
 }
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -54,5 +53,3 @@ module "authz_policy" {
 | name | The name of the authz policy. |
 | terraform\_labels | The combination of labels configured directly and default provider labels. |
 | update\_time | The timestamp when the authz policy was last updated. |
-
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

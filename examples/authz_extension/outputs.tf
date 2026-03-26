@@ -19,5 +19,5 @@ output "project_id" {
   value       = var.project_id
 }
 
-# Assuming your module outputs 'id' or 'name', if not you can omit these 
+# Assuming your module outputs 'id' or 'name', if not you can omit these
 # or update them to match your actual module's outputs.tf

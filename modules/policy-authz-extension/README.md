@@ -35,7 +35,6 @@ module "policy_authz_extension" {
   }
 }
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -52,5 +51,3 @@ module "policy_authz_extension" {
 | extension\_ids | The fully qualified resource names designating the authorization extensions provisioned by the module. |
 | policy\_extension\_map | A mapping of each authorization policy name to its designated authorization extension resource identifier. |
 | policy\_ids | The fully qualified resource names designating the authorization policies provisioned by the module. |
-
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

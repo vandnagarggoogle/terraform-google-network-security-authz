@@ -26,7 +26,6 @@ module "authz_extension" {
   }
 }
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -55,5 +54,3 @@ module "authz_extension" {
 | name | The name of the created AuthzExtension resource. |
 | terraform\_labels | The combination of labels configured directly on the resource and default provider labels. |
 | update\_time | The timestamp when the resource was last updated. |
-
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

@@ -57,6 +57,7 @@ variable "timeout" {
 variable "fail_open" {
   description = "Determines how the proxy behaves if the call to the extension fails. TRUE to continue, FALSE to error."
   type        = bool
+  default     = false
 }
 
 variable "metadata" {

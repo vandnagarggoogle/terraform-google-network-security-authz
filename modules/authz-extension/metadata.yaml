@@ -25,7 +25,6 @@ spec:
       repo: https://github.com/GoogleCloudPlatform/terraform-google-network-security-authz.git
       sourceType: git
       dir: /modules/authz-extension
-    version: 0.0.2
     actuationTool:
       flavor: Terraform
       version: ">= 1.3"
@@ -89,7 +88,7 @@ spec:
       - name: fail_open
         description: Determines how the proxy behaves if the call to the extension fails. TRUE to continue, FALSE to error.
         varType: bool
-        required: true
+        defaultValue: false
       - name: metadata
         description: Metadata included as part of the ProcessingRequest message. Supports {forwarding_rule_id} substitution.
         varType: map(string)
@@ -122,9 +121,6 @@ spec:
           - string
       - name: update_time
         description: The timestamp when the resource was last updated.
-        type: string
-      - name: create_time
-        description: The timestamp when the resource was created.
         type: string
   requirements:
     roles:

@@ -205,7 +205,7 @@ resource "google_network_security_authz_policy" "authz_policy" {
                       name = headers.value.name
                       # Note: 'value' should also be dynamic to avoid empty value {} blocks
                       dynamic "value" {
-                        for_each = [1] 
+                        for_each = [1]
                         content {
                           exact       = try(headers.value.exact, null)
                           prefix      = try(headers.value.prefix, null)
